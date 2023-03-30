@@ -1,0 +1,27 @@
+fun main(args:Array<String>){
+    println("traversing value of map.....")
+    println()
+    var myMap= mapOf<Int,String>(1 to "ruksana",2 to "charan",3 to "cherry",4 to "rukku")
+    println(myMap)
+    println()
+    println("generic values of map....")
+    var m:Map<Int,String> = mapOf<Int,String>(1 to "sports:",2 to "batmiton",3 to "tennis",4 to "cricket")
+    for(key in m.keys){
+        println("Element at key $key = ${m.get(key)}")
+    }
+    println()
+    println("non generic values....")
+    var m1= mapOf(1 to "apple",2 to "cherry",3 to "banana")
+    for(key in m1.keys)
+        println("Element at key $key = ${m.get(key)}")
+println()
+    println("to get values.....")
+    var m2:Map<Int,String> = mapOf<Int,String>(1 to "india",2 to "hyderabad",3 to "chennai",4 to "bangalore")
+    for(value in m2.values)
+        println("values"+value)
+    println()
+    println("contains method.....")
+    var m3= mapOf(1 to "box",2 to "bat",3 to "cat",4 to "rat")
+    println(m3.containsValue("bat"))
+    println(m3.contains(4))
+  }
